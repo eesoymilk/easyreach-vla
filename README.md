@@ -26,7 +26,7 @@ The CLI is built with `Typer` and defaults to `openvla/openvla-7b`.
 ### Basic Inference
 
 ```bash
-uv run python inference.py run --instruction "Pick up the apple" --image-path ./test_image.png
+uv run python inference.py run --instruction "Pick up the mug" --image-path ./test_image.png
 ```
 
 ### Mock Mode (No GPU/Model download required)
@@ -34,7 +34,7 @@ uv run python inference.py run --instruction "Pick up the apple" --image-path ./
 Test without downloading models:
 
 ```bash
-uv run python inference.py run --instruction "Pick up the apple" --mock
+uv run python inference.py run --instruction "Pick up the mug" --mock
 ```
 
 ### Available Models
@@ -46,7 +46,7 @@ uv run python inference.py run --instruction "Pick up the apple" --mock
 
 ```bash
 uv run python inference.py run \
-  --instruction "Pick up the apple" \
+  --instruction "Pick up the mug" \
   --image-path ./test_image.png \
   --model-id openvla/openvla-7b-finetuned-libero-spatial
 ```
@@ -94,6 +94,7 @@ uv run huggingface-cli download openvla/openvla-7b
 ### Dependency Versions
 
 This project requires specific dependency versions for compatibility:
+
 - `numpy>=1.21.0,<2.0.0` (TensorFlow compatibility)
 - `protobuf>=3.20.0,<5.0.0` (TensorFlow compatibility)
 - `timm>=0.9.10,<1.0.0` (OpenVLA requirement)

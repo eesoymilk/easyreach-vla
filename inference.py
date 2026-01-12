@@ -15,7 +15,7 @@ def run(
         "openvla", help="Type of model to use (default: openvla)."
     ),
     model_id: Optional[str] = typer.Option(
-        None, help="HuggingFace model ID (default: openvla/openvla-7b)."
+        "openvla/openvla-7b", help="HuggingFace model ID (default: openvla/openvla-7b)."
     ),
     image_path: Optional[str] = typer.Option(None, help="Path to the input image."),
     device: Optional[str] = typer.Option(
@@ -27,10 +27,6 @@ def run(
     Run inference on OpenVLA models.
     """
     try:
-        # Set default model_id if not provided
-        if model_id is None:
-            model_id = "openvla/openvla-7b"
-
         print(f"Using model: {model_id} (type: {model_type})")
 
         if mock:
