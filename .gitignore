@@ -8,5 +8,34 @@ wheels/
 
 # Virtual environments
 .venv
+venv/
+env/
 
+# OS files
 .DS_Store
+
+# Model checkpoints and cache
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+models/
+.cache/
+
+# HuggingFace cache
+.huggingface/
+
+# Test files
+test_*.png
+test_*.jpg
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# CogACT (not needed anymore)
+CogACT/

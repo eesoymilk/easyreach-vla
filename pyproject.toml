@@ -1,5 +1,5 @@
 [project]
-name = "openvla-inference"
+name = "easyreach-vla"
 version = "0.1.0"
 description = "Python CLI for running inference on OpenVLA vision-language-action models"
 readme = "README.md"

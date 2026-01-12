@@ -1,6 +1,6 @@
-# OpenVLA Inference
+# EasyReach VLA
 
-This project allows running inference on OpenVLA models using a Python CLI.
+A simple Python CLI for running inference on OpenVLA vision-language-action models.
 
 ## What is OpenVLA?
 
@@ -107,4 +107,4 @@ This project requires specific dependency versions for compatibility:
 
 ## Version
 
-OpenVLA Inference v0.1.0
+EasyReach VLA v0.1.0
